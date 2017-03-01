@@ -73,7 +73,7 @@ public class ColumnActivity extends BaseActivity implements OnItemClickListener 
         optionalList = (List<ColumnBean>) intent.getSerializableExtra("optionalList_key");
 
         mNavigationViewRed = (NavigationViewPush) findViewById(R.id.nav_column);
-        mNavigationViewRed.getRightView().setImageResource(R.drawable.top_navigation_close);
+        mNavigationViewRed.getRightView().setImageResource(R.drawable.top_navigation_close_dark);
         mNavigationViewRed.setupNavigationView(false, true, "栏目管理", new NavigationViewPush.OnClickListener() {
             @Override
             public void onRightClick(View v) {
