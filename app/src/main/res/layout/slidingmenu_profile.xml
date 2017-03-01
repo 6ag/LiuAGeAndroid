@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a1919"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--头部区域-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+
+            <!--头像部分 添加点击事件-->
+            <LinearLayout
+                android:id="@+id/ll_slidingmenu_profile_portrait_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <!--头像-->
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sdv_slidingmenu_profile_portrait_image"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:padding="0dp"
+                    fresco:actualImageScaleType="fitXY"
+                    fresco:placeholderImage="@drawable/default_portrait"
+                    fresco:roundedCornerRadius="35dp"/>
+
+                <!--昵称-->
+                <TextView
+                    android:id="@+id/tv_slidingmenu_profile_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="登录账号"
+                    android:textColor="#fff"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--列表区域-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_slidingmenu_profile_collection_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/profile_collection_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="45dp"
+                    android:text="我的收藏"
+                    android:textColor="#fff"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_slidingmenu_profile_comment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/profile_comment_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="45dp"
+                    android:text="我的足迹"
+                    android:textColor="#fff"/>
+
+            </RelativeLayout>
+
+            <!--分割线-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:alpha="0.5"
+                android:background="#ccc"/>
+
+            <!--清除缓存-->
+            <RelativeLayout
+                android:id="@+id/rl_slidingmenu_profile_clear_cache_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/profile_clean_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="45dp"
+                    android:text="清除缓存"
+                    android:textColor="#fff"/>
+
+            </RelativeLayout>
+
+            <!--夜间模式-->
+            <RelativeLayout
+                android:id="@+id/rl_slidingmenu_profile_change_mode_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/profile_mode_daylight"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="45dp"
+                    android:text="夜间模式"
+                    android:textColor="#fff"/>
+
+            </RelativeLayout>
+
+            <!--分割线-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:alpha="0.5"
+                android:background="#ccc"/>
+
+            <!--意见反馈-->
+            <RelativeLayout
+                android:id="@+id/rl_slidingmenu_profile_feekback_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/profile_feedback_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="45dp"
+                    android:text="意见反馈"
+                    android:textColor="#fff"/>
+
+            </RelativeLayout>
+
+            <!--推荐给好友-->
+            <RelativeLayout
+                android:id="@+id/rl_slidingmenu_profile_commend_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/profile_share_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="45dp"
+                    android:text="推荐给好友"
+                    android:textColor="#fff"/>
+
+            </RelativeLayout>
+
+            <!--关于我们-->
+            <RelativeLayout
+                android:id="@+id/rl_slidingmenu_profile_aboutme_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/profile_about_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="45dp"
+                    android:text="关于我们"
+                    android:textColor="#fff"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

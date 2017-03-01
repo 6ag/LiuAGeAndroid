@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/activity_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:clipToPadding="true"
+                android:fitsSystemWindows="true">
+
+    <!--状态栏-->
+    <View
+        android:id="@+id/fl_main_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/colorPrimary">
+    </View>
+
+    <!--导航栏-->
+    <RelativeLayout
+        android:id="@+id/nav_main"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/fl_main_status_bar"
+        android:background="@color/colorPrimary">
+
+        <ImageButton
+            android:id="@+id/nav_main_left_menu"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/navigation_right_menu"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/navigation_logo_white"/>
+
+        <ImageButton
+            android:id="@+id/nav_main_right_search"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/top_navigation_search"/>
+
+    </RelativeLayout>
+
+    <!--横向标签视图-->
+    <LinearLayout
+        android:id="@+id/ll_news_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nav_main"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tl_news_tabLayout"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            app:tabGravity="fill"
+            app:tabIndicatorHeight="0dp"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/colorAccent"
+            app:tabTextAppearance="@style/NewsTabLayoutTextAppearance"
+            app:tabTextColor="@color/colorPrimaryDark"/>
+
+        <ImageButton
+            android:id="@+id/ib_news_class_add"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:src="@drawable/channel_nav_plus"/>
+    </LinearLayout>
+
+    <!--列表内容主体-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_news_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_news_title_bar"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAllBackgroundColor"
+        android:overScrollMode="never"
+        android:scrollbars="none"/>
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tv.baokan.liuageandroid.ui.activity.SplashActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/launch_screen"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_splash_show_ad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_splash_ad_img"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_splash_time"
+            android:orientation="horizontal"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp">
+
+            <TextView
+                android:id="@+id/tv_splash_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="5"
+                android:textColor="#ffffffff"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/ll_splash_ad_skip_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="3dp"
+                android:background="@null"
+                android:text="跳过 "
+                android:textColor="#ffffffff"
+                android:textSize="15sp"
+            />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

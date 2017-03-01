@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="5dp"
+              android:layout_marginEnd="10dp"
+              android:layout_marginStart="10dp"
+              android:layout_marginTop="5dp"
+              android:minHeight="38.0dip"
+              android:minWidth="72.0dip">
+
+    <TextView
+        android:id="@+id/tv_hot_keyboard_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/subscribe_item_bg"
+        android:gravity="center"
+        android:minHeight="38.0dip"
+        android:minWidth="72.0dip"
+        android:textColor="@color/subscribe_item_text_color"
+        android:textSize="14.0sp"/>
+
+</LinearLayout>

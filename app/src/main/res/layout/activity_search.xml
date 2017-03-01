@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="tv.baokan.liuageandroid.ui.activity.SearchActivity">
+
+    <!--导航栏-->
+    <RelativeLayout
+        android:id="@+id/nav_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/iv_nav_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@drawable/top_navigation_back_normal"
+            android:visibility="visible"/>
+
+        <SearchView
+            android:id="@+id/sv_searchView"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@id/iv_nav_back"
+            android:background="@drawable/shape_comment_edittext"
+            android:iconifiedByDefault="false"
+            android:queryHint="请输入关键词..."/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/nav_search"
+        android:background="@color/colorAllBackgroundColor">
+
+        <!--关键词列表-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_search_list_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="vertical">
+        </android.support.v7.widget.RecyclerView>
+
+        <!--热门关键词集合-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_search_hot_list_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:overScrollMode="never"
+            android:scrollbars="vertical">
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

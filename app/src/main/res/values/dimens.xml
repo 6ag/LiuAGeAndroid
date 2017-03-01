@@ -1,0 +1,8 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--搜索文本框文字底部margin-->
+    <dimen name="search_text_bottom_margin">-3dp</dimen>
+</resources>

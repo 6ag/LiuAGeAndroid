@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_cell_touch_bg">
+
+    <TextView
+        android:id="@+id/tv_cell_news_list_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:maxLines="2"
+        android:text="国家版权局等四部门通报5起典型网络文学侵权盗版案件"
+        android:textColor="#262626"
+        android:textSize="17sp"/>
+    <!--android:textSize="15sp"-->
+
+    <LinearLayout
+        android:id="@+id/ll_news_list_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_cell_news_list_title"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_weight="1">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_cell_news_list_pic1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                fresco:placeholderImage="@drawable/placeholder_logo"
+                fresco:placeholderImageScaleType="focusCrop"/>
+
+            <LinearLayout
+                android:id="@+id/ll_cell_news_list_morepic_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="#9c080000"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/news_list_morepic_icon"/>
+
+                <TextView
+                    android:id="@+id/tv_cell_news_list_morepic_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18图"
+                    android:textColor="#fff"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_news_list_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_news_list_pic"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_cell_news_list_ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/news_list_ad"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tv_cell_news_list_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016年08月24日"
+            android:textColor="#BCBCBC"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_cell_news_list_befrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="易看网"
+            android:textColor="#BCBCBC"
+            android:textSize="12sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/news_list_look"/>
+
+        <TextView
+            android:id="@+id/tv_cell_news_list_onclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:text="2912"
+            android:textColor="#BCBCBC"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_below="@id/ll_news_list_bottom"
+        android:layout_marginTop="12dp"
+        android:alpha="0.5"
+        android:background="#cccccc"/>
+
+</RelativeLayout>

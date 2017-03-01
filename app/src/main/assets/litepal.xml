@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<litepal>
+    <dbname value="liuage">
+    </dbname>
+    <version value="1">
+    </version>
+    <list>
+        <mapping class="tv.baokan.liuageandroid.cache.NewsListHomeCache">
+        </mapping>
+        <mapping class="tv.baokan.liuageandroid.cache.NewsListOtherCache">
+        </mapping>
+        <mapping class="tv.baokan.liuageandroid.cache.NewsIsGoodHomeCache">
+        </mapping>
+        <mapping class="tv.baokan.liuageandroid.cache.NewsIsGoodOtherCache">
+        </mapping>
+        <mapping class="tv.baokan.liuageandroid.cache.NewsContentCache">
+        </mapping>
+        <mapping class="tv.baokan.liuageandroid.cache.KeyboardCache">
+        </mapping>
+    </list>
+</litepal>

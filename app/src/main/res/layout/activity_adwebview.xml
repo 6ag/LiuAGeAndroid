@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ad_webivew"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tv.baokan.liuageandroid.ui.activity.AdWebViewActivity">
+
+    <!--滚动区域-->
+    <tv.baokan.liuageandroid.widget.CustomerScrollView
+        android:id="@+id/bsv_ad_webivew_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="42dp"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        android:visibility="invisible">
+
+        <!--内容页整个滚动区域-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--正文-->
+            <WebView
+                android:id="@+id/wv_ad_webivew_webview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+            </WebView>
+
+        </LinearLayout>
+
+    </tv.baokan.liuageandroid.widget.CustomerScrollView>
+
+    <!--顶部白色透明条-->
+    <View
+        android:id="@+id/v_ad_webivew_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:alpha="0.8"
+        android:background="#ffffff"/>
+
+    <!--进度圈-->
+    <ProgressBar
+        android:id="@+id/pb_ad_webivew_progressbar"
+        style="@android:style/Widget.ProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="100dp"
+        android:indeterminateDrawable="@anim/progressbar_rotate"/>
+
+    <!--新闻内容页底部条-->
+    <LinearLayout
+        android:id="@+id/ll_ad_webivew_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#cccccc"/>
+
+        <!--5个功能按钮-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/ib_ad_webivew_bottom_bar_back"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/bottom_bar_back_selected"/>
+
+            <ImageButton
+                android:id="@+id/ib_ad_webivew_bottom_bar_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/bottom_bar_edit_selected"/>
+
+            <ImageButton
+                android:id="@+id/ib_ad_webivew_bottom_bar_font"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/bottom_bar_font_selected"/>
+
+            <ImageButton
+                android:id="@+id/ib_ad_webivew_bottom_bar_collection"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/bottom_bar_collection_normal2"/>
+
+            <ImageButton
+                android:id="@+id/ib_ad_webivew_bottom_bar_share"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/bottom_bar_share_selected"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+    <ShareSDK
+        AppKey="1385076478b60"/>
+
+    <!--微信-->
+    <Wechat
+        AppId="wx878f3a6e37859f9e"
+        AppSecret="ec45fb9165b542deb40c6737dcd82ddb"
+        BypassApproval="false"
+        Enable="true"
+        Id="1"
+        SortId="1"/>
+
+    <!--微信朋友圈-->
+    <WechatMoments
+        AppId="wx878f3a6e37859f9e"
+        AppSecret="ec45fb9165b542deb40c6737dcd82ddb"
+        BypassApproval="false"
+        Enable="true"
+        Id="2"
+        SortId="2"/>
+
+    <!--微信收藏-->
+    <WechatFavorite
+        AppId="wx878f3a6e37859f9e"
+        AppSecret="ec45fb9165b542deb40c6737dcd82ddb"
+        Enable="true"
+        Id="3"
+        SortId="3"/>
+
+    <!--新浪微博-->
+    <SinaWeibo
+        AppKey="3574168239"
+        AppSecret="3f7cc901506fd3c1c3255a78398ed340"
+        Enable="true"
+        Id="4"
+        RedirectUrl="https://blog.6ag.cn"
+        ShareByAppClient="false"
+        SortId="4"/>
+
+    <!--QQ-->
+    <QQ
+        AppId="1106003864"
+        AppKey="KEY0vmnTNkrLa0HlrOX"
+        Enable="true"
+        Id="5"
+        ShareByAppClient="true"
+        SortId="5"/>
+
+    <!--QQ空间 需要单独申请-->
+    <QZone
+        AppId="1106003864"
+        AppKey="KEY0vmnTNkrLa0HlrOX"
+        Enable="true"
+        Id="6"
+        SortId="6"/>
+
+    <!--邮件-->
+    <Email
+        Id="7"
+        SortId="7"
+        Enable="true" />
+
+    <!--短信-->
+    <ShortMessage
+        Id="8"
+        SortId="8"
+        Enable="true" />
+
+</DevInfor>
