@@ -20,39 +20,39 @@ iOS端使用 `Xcode8.1` + `Swift3.0` 开发，注释也很详细哦，有兴趣�
 
 ### 传统新闻首页
 
-![image](https://github.com/6ag/LiuAGeAndroid/tree/master/show/1.jpg)
+![image](https://github.com/6ag/LiuAGeAndroid/blob/master/show/1.jpg)
 
 ### 多种item类型
 
-![image](https://github.com/6ag/LiuAGeAndroid/tree/master/show/2.jpg)
+![image](https://github.com/6ag/LiuAGeAndroid/blob/master/show/2.jpg)
 
 ### 资讯详情 - 正文
 
-![image](https://github.com/6ag/LiuAGeAndroid/tree/master/show/3.jpg)
+![image](https://github.com/6ag/LiuAGeAndroid/blob/master/show/3.jpg)
 
 ### 资讯详情 - 图片浏览器
 
-![image](https://github.com/6ag/LiuAGeAndroid/tree/master/show/4.jpg)
+![image](https://github.com/6ag/LiuAGeAndroid/blob/master/show/4.jpg)
 
 ### 资讯详情 - 相关连接、评论
 
-![image](https://github.com/6ag/LiuAGeAndroid/tree/master/show/5.jpg)
+![image](https://github.com/6ag/LiuAGeAndroid/blob/master/show/5.jpg)
 
 ### 图片浏览器
 
-![image](https://github.com/6ag/LiuAGeAndroid/tree/master/show/6.jpg)
+![image](https://github.com/6ag/LiuAGeAndroid/blob/master/show/6.jpg)
 
 ### 侧栏个人中心
 
-![image](https://github.com/6ag/LiuAGeAndroid/tree/master/show/7.jpg)
+![image](https://github.com/6ag/LiuAGeAndroid/blob/master/show/7.jpg)
 
 ### 个人中心
 
-![image](https://github.com/6ag/LiuAGeAndroid/tree/master/show/8.jpg)
+![image](https://github.com/6ag/LiuAGeAndroid/blob/master/show/8.jpg)
 
 ### 登录、注册、找回密码 - 支持第三方登录
 
-![image](https://github.com/6ag/LiuAGeAndroid/tree/master/show/9.jpg)
+![image](https://github.com/6ag/LiuAGeAndroid/blob/master/show/9.jpg)
 
 ### 。。。等
 
